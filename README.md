@@ -1,1 +1,1 @@
-InterBotAdmin
+Admin panel where the data is going to be supplied for the InterBot app 
