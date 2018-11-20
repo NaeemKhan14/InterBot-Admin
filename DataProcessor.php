@@ -70,6 +70,18 @@ class DataProcessor {
     }
   }
 
+  /*
+  * Save the results in a separete file
+  */
+  function saveData($fileName): void {
+    if(!file_exists($fileName . ".txt")) {
+      $data = file_get_contents($this->fileToCheck);
+      file_put_contents($fileName . ".txt", $data);
+      echo "File " . $fileName . " was created successfully";
+    } else {
+      echo "File " . $fileName . " already exist!";
+    }
+  }
 }
 
 ?>
